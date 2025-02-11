@@ -5,7 +5,7 @@ const ProfileBio = ({currentProfile}) => {
     <div>
         <div>
         {
-            currentProfile?.tags.length!=0 ? (
+            currentProfile?.tags.length!==0 ? (
                 <>
                 <h4>Tags watched</h4>
                 {

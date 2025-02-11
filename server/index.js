@@ -20,7 +20,7 @@ app.use('/question',questionRoutes);
 app.use('/answer',answerRoutes);
 const PORT= process.env.PORT || 5000;
 
-const Connect_URL=process.env.CONNECTION_URL
+const Connect_URL="mongodb+srv://alisbahhina:EpwyjtxwmU8uTIlx@cluster0.fjfwp6n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 mongoose.connect(Connect_URL,{useNewUrlParser:true,useUnifiedTopology:true})
 .then(()=>app.listen(PORT,()=>{console.log(`server running on port ${PORT}`)}))
