@@ -11,7 +11,7 @@ import UserProfile from './pages/UserProfile/UserProfile'
 function AllRoutes() {
   return (
     <Routes>
-      <Route exact path='/' element={<Home/>}></Route>
+      <Route path='/' element={<Home/>}></Route>
       <Route path='/Auth' element={<Auth/>}></Route>
       <Route path='/Questions' element={<Questions/>}/>
       <Route path='/AskQuestion' element={<AskQuestion/>}/>
